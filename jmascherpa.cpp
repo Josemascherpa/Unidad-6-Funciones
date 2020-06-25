@@ -89,7 +89,7 @@ void tablaPuntos(int arreglo[],int n,int& full,int& poker,int& escalera,int& gen
 	punt4 = cont4*4;
 	punt5 = cont5*5;
 	punt6 = cont6*6;
-	cout<<endl<<"Todo al 1:"<<punt1<<" puntos."<<endl;//Mostrando tabla con puntos.
+	cout<<endl<<endl<<"Todo al 1:"<<punt1<<" puntos."<<endl;//Mostrando tabla con puntos.
 	cout<<"Todo al 2:"<<punt2<<" puntos."<<endl;
 	cout<<"Todo al 3:"<<punt3<<" puntos."<<endl;
 	cout<<"Todo al 4:"<<punt4<<" puntos."<<endl;
@@ -128,37 +128,37 @@ int puntajeTotal(int full,int poker,int escalera,int generala,int& maxPuntaje,in
 	
 	if((punt1>=punt2 && punt1>=punt3 && punt1>=punt4 && punt1>=punt5 && punt1>=punt6)&& (full==0 && poker==0 && escalera==0 && generala ==0 )){ //Verificando y guardando en la variable Max puntaje, el mayor puntaje del jugador.
 		maxPuntaje=punt1;
-		cout<<"El mayor puntaje es: "<<maxPuntaje<<endl;		
+		cout<<endl<<"El mayor puntaje es: "<<maxPuntaje<<endl;		
 		
 	}else if((punt2>=punt1 && punt2>=punt3 && punt2>=punt4 && punt2>=punt5 && punt2>=punt6)&& (full==0 && poker==0 && escalera==0 && generala ==0 )){
 		maxPuntaje=punt2;
-		cout<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
+		cout<<endl<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
 	}else if((punt3>=punt1 && punt3>=punt2 && punt3>=punt4 && punt3>=punt5 && punt3>=punt6)&& (full==0 && poker==0 && escalera==0 && generala ==0 )){
 		maxPuntaje=punt3;
-		cout<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
+		cout<<endl<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
 	}else if((punt4>=punt1 && punt4>=punt2 && punt4>=punt3 && punt4>=punt5 && punt4>=punt6)&& (full==0 && poker==0 && escalera==0 && generala ==0 )){
 		maxPuntaje=punt4;
-		cout<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
+		cout<<endl<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
 	}else if((punt5>=punt1 && punt5>=punt2 && punt5>=punt3 && punt5>=punt4 && punt5>=punt6)&& (full==0 && poker==0 && escalera==0 && generala ==0 )){
 		maxPuntaje=punt5;
-		cout<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
+		cout<<endl<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
 	}else if((punt6>=punt1 && punt6>=punt2 && punt6>=punt3 && punt6>=punt4 && punt6>=punt5)&& (full==0 && poker==0 && escalera==0 && generala ==0 )){
 		maxPuntaje=punt6;
-		cout<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
+		cout<<endl<<"El mayor puntaje es: "<<maxPuntaje<<endl;	
 	}
 	
 	if(full!=0){ //Verificando si salio full que se guarde como mayor puntaje.
 		maxPuntaje=full;
-		cout<<"Mayor puntaje:Full "<<maxPuntaje<<" puntos."<<endl;
+		cout<<endl<<"Mayor puntaje:Full "<<maxPuntaje<<" puntos."<<endl;
 	}else if(poker!=0){//Verificando si salio poker que se guarde como mayor puntaje.
 		maxPuntaje=poker;
-		cout<<"Mayor puntaje:Poker "<<maxPuntaje<<" puntos."<<endl;
+		cout<<endl<<"Mayor puntaje:Poker "<<maxPuntaje<<" puntos."<<endl;
 	}else if(escalera!=0){//Verificando si salio escalera que se guarde como mayor puntaje.
 		maxPuntaje=escalera;
-		cout<<"Mayor puntaje:Escalera "<<maxPuntaje<<" puntos."<<endl;
+		cout<<endl<<"Mayor puntaje:Escalera "<<maxPuntaje<<" puntos."<<endl;
 	}else if(generala!=0){//Verificando si salio generala que se guarde como mayor puntaje.
 		maxPuntaje=generala;
-		cout<<"Mayor puntaje:Generala "<<maxPuntaje<<" puntos."<<endl;
+		cout<<endl<<"Mayor puntaje:Generala "<<maxPuntaje<<" puntos."<<endl;
 	}
 	
 	return maxPuntaje;
